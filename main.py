@@ -1,8 +1,8 @@
 
 import xlsxwriter as xs
 
-workbook = xs.Workbook('hello.xlsx')
-worksheet = workbook.add_worksheet()
+workbook = xs.Workbook("Student_Information.xlsx")
+worksheet = workbook.add_worksheet("Student Details")
 
 Font_Format = workbook.add_format()
 font_format_row = workbook.add_format()
@@ -59,5 +59,5 @@ for phnCol in content_phone:
     worksheet.write(row,col,phnCol,font_format_row)
     row += 1
 
-
+print("Great! Now Check your project directory!")
 workbook.close()
